@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include zahraasapp *.css
+recursive-include zahraasapp *.csv
+recursive-include zahraasapp *.html
+recursive-include zahraasapp *.ico
+recursive-include zahraasapp *.js
+recursive-include zahraasapp *.json
+recursive-include zahraasapp *.md
+recursive-include zahraasapp *.png
+recursive-include zahraasapp *.py
+recursive-include zahraasapp *.svg
+recursive-include zahraasapp *.txt
+recursive-exclude zahraasapp *.pyc
