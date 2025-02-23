@@ -34,6 +34,9 @@ frappe.query_reports["Client Statement"] = {
 			"options": "Customer",
 			"reqd": 1
 		}
+	],
 
-	]
+	"onload": function(report) {
+		report.page.add_inner_message(__("Note: This statement excludes the opening balance before the 'From Date' and does not account for payment receipts. It is based solely on Sales Invoices and Returns."));
+	}
 }

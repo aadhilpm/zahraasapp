@@ -26,7 +26,7 @@ def execute(filters=None):
         },
         {
             "label": _("Remark"),
-            "fieldname": "remark",
+            "fieldname": "po_remark",
             "fieldtype": "Data",
             "width": 180
         },
@@ -56,7 +56,7 @@ def execute(filters=None):
             posting_date,
             IF(is_return, 'Sales Return', 'Sales Invoice') AS document_type,
             name AS reference,
-            po_no AS remark,
+            po_no AS po_remark,
             IF(is_return, 0, grand_total) AS debit,
             IF(is_return, grand_total, 0) AS credit
         FROM
